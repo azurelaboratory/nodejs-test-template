@@ -13,7 +13,7 @@ const client = new Client({
 const requestHandler = async (request, response) => {
   console.log(request.url);
 
-  const message = process.env.MESSAGE || "Hello, World!";
+  const message = process.env.MESSAGE || "Hello, Rod!";
 
   // Run hello world query
   const serverVersionRes = await client.query(
